@@ -14,13 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(
-          primarySwatch: Colors.cyan,
-          fontFamily: GoogleFonts.lato().fontFamily
-        ),
+            primarySwatch: Colors.cyan,
+            fontFamily: GoogleFonts.lato().fontFamily),
         initialRoute: "/",
         routes: {
-          MyRoutes.loginRoute : (context) => LoginPage(),
-          MyRoutes.homeRoute : (context) => HomePage()
+          MyRoutes.loginRoute: (context) => LoginPage(),
+          MyRoutes.homeRoute: (context) => HomePage()
         });
   }
 }
