@@ -8,14 +8,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     int age = 20;
-    double numsdf = 100.0342;
+
     String name = "Krishan Walia";
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Krishan's App"),
+        title: const Text(
+          "Krishan's App",
+        ),
       ),
-      
       body: Center(
         child: Container(
           child: Text("the name is $name, i am $age years old"),
